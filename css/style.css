@@ -1,0 +1,146 @@
+:root {
+  --mainColor: #252734;
+  --secondaryColor: #333646;
+  --acsentColor: #ff9100;
+}
+
+body {
+  background-color: var(--mainColor);
+  min-height: 900px;
+  font-family: 'ubuntu', sans-serif;
+}
+section {
+  padding-top: 2rem;
+}
+section h1 {
+  color: white;
+  font-size: 2.5rem;
+}
+
+/* Navbar Start */
+#nav {
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+.nav-dark {
+  background-color: var(--secondaryColor) !important;
+  z-index: 100;
+  transition: 0.8s;
+}
+
+.nav-link.active {
+  color: var(--acsentColor) !important;
+  font-weight: 700;
+}
+/* Navbar End */
+
+/* Hero Section */
+#hero {
+  padding-top: 100px;
+  color: white;
+  min-height: 100vh;
+}
+
+#hero h1 {
+  font-size: 3rem;
+}
+
+#hero h2 {
+  font-weight: 300;
+}
+
+#hero p {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+.color-acsent {
+  color: var(--acsentColor);
+}
+
+.btn-custom1 {
+  background-color: var(--acsentColor);
+  text-align: center;
+  color: white;
+  min-width: 150px;
+  height: 45px;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.btn-custom1:hover {
+  box-shadow: 0 0 5px rgba(255, 166, 0, 0.8);
+}
+
+.cv {
+  color: white;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.social-icon svg {
+  margin-right: 0.7em;
+  margin-bottom: 10px;
+}
+.social-icon a:hover svg path {
+  fill: var(--acsentColor);
+}
+
+/* Hero Section End */
+
+/* About Start */
+hr {
+  width: 35%;
+  height: 5px;
+  color: var(--acsentColor);
+  margin: 0 auto;
+  opacity: 1;
+}
+
+#about {
+  min-height: 300px;
+  width: 100%;
+  background-color: var(--secondaryColor);
+  color: white;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  margin-bottom: 80px;
+}
+/* About End */
+
+/* Skill Start */
+#skill {
+  min-height: 600px;
+  width: 100%;
+  color: white;
+}
+
+#skill img {
+  width: 12%;
+  margin: 10px;
+}
+
+#skill img:target {
+  background-color: red;
+}
+
+#skill .card {
+  background-color: #414558;
+  transition: 1s ease-in-out;
+}
+#skill .card:hover {
+  background-color: var(--acsentColor);
+}
+#skill .card img {
+  width: 95%;
+  padding: 1rem;
+}
+
+/* Skill End */
+
+/* Footer Start */
+.social-icon-footer svg {
+  margin-right: 0.7rem;
+  margin-bottom: 10px;
+}
+/* Footer End */
